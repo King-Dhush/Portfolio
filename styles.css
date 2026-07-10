@@ -1,0 +1,84 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #090d16;
+  color: #e4ecff;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(960px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  background: radial-gradient(circle at top left, #183660, #090d16 55%);
+  padding: 5rem 0 3rem;
+  border-bottom: 1px solid #1d2d48;
+}
+
+.eyebrow {
+  color: #8bc5ff;
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.intro {
+  max-width: 65ch;
+  color: #c5d5f4;
+}
+
+main {
+  padding: 2.5rem 0 4rem;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: #0e1729;
+  border: 1px solid #243552;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.tags {
+  margin-bottom: 0;
+  color: #9fc7f2;
+  font-size: 0.95rem;
+}
+
+footer {
+  border-top: 1px solid #1d2d48;
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  color: #9db2d8;
+}

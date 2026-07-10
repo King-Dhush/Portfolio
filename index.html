@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersecurity Portfolio | Dhush</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">Aspiring Cybersecurity Professional</p>
+        <h1>Dhush Portfolio</h1>
+        <p class="intro">
+          I am a student focused on cybersecurity, cloud defense, and practical
+          security engineering. This site highlights my school projects and the
+          skills I am building to contribute to secure systems.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Cybersecurity School Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Network Traffic Threat Detection Lab</h3>
+            <p>
+              Built a packet analysis workflow using Wireshark and Suricata to
+              identify suspicious traffic patterns, brute-force attempts, and
+              malicious signatures in a simulated campus network.
+            </p>
+            <p class="tags">Tools: Wireshark, Suricata, Linux</p>
+          </article>
+
+          <article class="project-card">
+            <h3>Web Application Security Assessment</h3>
+            <p>
+              Performed vulnerability discovery and reporting on a training web
+              app by testing authentication, input validation, and session
+              management controls against OWASP Top 10 risks.
+            </p>
+            <p class="tags">Tools: Burp Suite, OWASP ZAP, SQLMap</p>
+          </article>
+
+          <article class="project-card">
+            <h3>SIEM Incident Response Case Study</h3>
+            <p>
+              Investigated simulated phishing and lateral movement activity in
+              centralized logs, then documented response actions and mitigation
+              recommendations with a timeline of findings.
+            </p>
+            <p class="tags">Tools: Splunk, MITRE ATT&CK, Python</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Dhush • Cybersecurity Student Portfolio</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
